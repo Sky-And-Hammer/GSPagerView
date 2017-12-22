@@ -10,10 +10,18 @@
 		EDE0DD871FEB8FEB007975CA /* GSPagerView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE0DD7D1FEB8FEA007975CA /* GSPagerView.framework */; };
 		EDE0DD8C1FEB8FEB007975CA /* GSPagerView_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE0DD8B1FEB8FEB007975CA /* GSPagerView_Tests.swift */; };
 		EDE0DD8E1FEB8FEB007975CA /* GSPagerView.h in Headers */ = {isa = PBXBuildFile; fileRef = EDE0DD801FEB8FEA007975CA /* GSPagerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EDE0DD991FEB91F3007975CA /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE0DD981FEB91F3007975CA /* CollectionView.swift */; };
-		EDE0DD9D1FEB9555007975CA /* GSPagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE0DD9C1FEB9555007975CA /* GSPagerView.swift */; };
-		EDE0DD9F1FEB956B007975CA /* GSPagerViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE0DD9E1FEB956B007975CA /* GSPagerViewLayout.swift */; };
-		EDE0DDA11FEB99EF007975CA /* GSPagerViewTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE0DDA01FEB99EF007975CA /* GSPagerViewTransformer.swift */; };
+		EDE0DDDF1FED02FD007975CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE0DDDE1FED02FD007975CA /* AppDelegate.swift */; };
+		EDE0DDE11FED02FD007975CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE0DDE01FED02FD007975CA /* ViewController.swift */; };
+		EDE0DDE41FED02FD007975CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE0DDE21FED02FD007975CA /* Main.storyboard */; };
+		EDE0DDE61FED02FD007975CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDE0DDE51FED02FD007975CA /* Assets.xcassets */; };
+		EDE0DDE91FED02FD007975CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE0DDE71FED02FD007975CA /* LaunchScreen.storyboard */; };
+		EDE0DDF41FED0636007975CA /* GSPagerView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE0DD7D1FEB8FEA007975CA /* GSPagerView.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		EDE0DDF51FED0636007975CA /* GSPagerView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EDE0DD7D1FEB8FEA007975CA /* GSPagerView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EDE0DDFA1FED0D4B007975CA /* GSPagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE0DDF91FED0D4B007975CA /* GSPagerView.swift */; };
+		EDE0DDFC1FED0DFB007975CA /* GSPagerViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE0DDFB1FED0DFB007975CA /* GSPagerViewLayout.swift */; };
+		EDE0DDFE1FED0E22007975CA /* GSPagerViewLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE0DDFD1FED0E22007975CA /* GSPagerViewLayoutAttributes.swift */; };
+		EDE0DE021FED0E4D007975CA /* GSPageViewTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE0DE011FED0E4D007975CA /* GSPageViewTransformer.swift */; };
+		EDE0DE041FED0E69007975CA /* GSPagerCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE0DE031FED0E69007975CA /* GSPagerCollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +32,28 @@
 			remoteGlobalIDString = EDE0DD7C1FEB8FEA007975CA;
 			remoteInfo = GSPagerView.;
 		};
+		EDE0DDF61FED0636007975CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDE0DD741FEB8FEA007975CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDE0DD7C1FEB8FEA007975CA;
+			remoteInfo = GSPagerView;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EDE0DDF81FED0637007975CA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EDE0DDF51FED0636007975CA /* GSPagerView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		EDE0DD7D1FEB8FEA007975CA /* GSPagerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GSPagerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,10 +62,18 @@
 		EDE0DD861FEB8FEB007975CA /* GSPagerViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GSPagerViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDE0DD8B1FEB8FEB007975CA /* GSPagerView_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSPagerView_Tests.swift; sourceTree = "<group>"; };
 		EDE0DD8D1FEB8FEB007975CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EDE0DD981FEB91F3007975CA /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
-		EDE0DD9C1FEB9555007975CA /* GSPagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSPagerView.swift; sourceTree = "<group>"; };
-		EDE0DD9E1FEB956B007975CA /* GSPagerViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSPagerViewLayout.swift; sourceTree = "<group>"; };
-		EDE0DDA01FEB99EF007975CA /* GSPagerViewTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSPagerViewTransformer.swift; sourceTree = "<group>"; };
+		EDE0DDDC1FED02FD007975CA /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDE0DDDE1FED02FD007975CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EDE0DDE01FED02FD007975CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EDE0DDE31FED02FD007975CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EDE0DDE51FED02FD007975CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDE0DDE81FED02FD007975CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EDE0DDEA1FED02FD007975CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDE0DDF91FED0D4B007975CA /* GSPagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSPagerView.swift; sourceTree = "<group>"; };
+		EDE0DDFB1FED0DFB007975CA /* GSPagerViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSPagerViewLayout.swift; sourceTree = "<group>"; };
+		EDE0DDFD1FED0E22007975CA /* GSPagerViewLayoutAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSPagerViewLayoutAttributes.swift; sourceTree = "<group>"; };
+		EDE0DE011FED0E4D007975CA /* GSPageViewTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSPageViewTransformer.swift; sourceTree = "<group>"; };
+		EDE0DE031FED0E69007975CA /* GSPagerCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSPagerCollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +92,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EDE0DDD91FED02FD007975CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDE0DDF41FED0636007975CA /* GSPagerView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -63,6 +108,7 @@
 			children = (
 				EDE0DD7F1FEB8FEA007975CA /* GSPagerView */,
 				EDE0DD8A1FEB8FEB007975CA /* GSPagerView.Tests */,
+				EDE0DDDD1FED02FD007975CA /* Demo */,
 				EDE0DD7E1FEB8FEA007975CA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +118,7 @@
 			children = (
 				EDE0DD7D1FEB8FEA007975CA /* GSPagerView.framework */,
 				EDE0DD861FEB8FEB007975CA /* GSPagerViewTests.xctest */,
+				EDE0DDDC1FED02FD007975CA /* Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,10 +128,11 @@
 			children = (
 				EDE0DD801FEB8FEA007975CA /* GSPagerView.h */,
 				EDE0DD811FEB8FEA007975CA /* Info.plist */,
-				EDE0DD981FEB91F3007975CA /* CollectionView.swift */,
-				EDE0DD9C1FEB9555007975CA /* GSPagerView.swift */,
-				EDE0DD9E1FEB956B007975CA /* GSPagerViewLayout.swift */,
-				EDE0DDA01FEB99EF007975CA /* GSPagerViewTransformer.swift */,
+				EDE0DDF91FED0D4B007975CA /* GSPagerView.swift */,
+				EDE0DDFB1FED0DFB007975CA /* GSPagerViewLayout.swift */,
+				EDE0DDFD1FED0E22007975CA /* GSPagerViewLayoutAttributes.swift */,
+				EDE0DE011FED0E4D007975CA /* GSPageViewTransformer.swift */,
+				EDE0DE031FED0E69007975CA /* GSPagerCollectionView.swift */,
 			);
 			path = GSPagerView;
 			sourceTree = "<group>";
@@ -96,6 +144,19 @@
 				EDE0DD8D1FEB8FEB007975CA /* Info.plist */,
 			);
 			path = GSPagerView.Tests;
+			sourceTree = "<group>";
+		};
+		EDE0DDDD1FED02FD007975CA /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				EDE0DDDE1FED02FD007975CA /* AppDelegate.swift */,
+				EDE0DDE01FED02FD007975CA /* ViewController.swift */,
+				EDE0DDE21FED02FD007975CA /* Main.storyboard */,
+				EDE0DDE51FED02FD007975CA /* Assets.xcassets */,
+				EDE0DDE71FED02FD007975CA /* LaunchScreen.storyboard */,
+				EDE0DDEA1FED02FD007975CA /* Info.plist */,
+			);
+			path = Demo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +210,26 @@
 			productReference = EDE0DD861FEB8FEB007975CA /* GSPagerViewTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		EDE0DDDB1FED02FD007975CA /* Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDE0DDED1FED02FD007975CA /* Build configuration list for PBXNativeTarget "Demo" */;
+			buildPhases = (
+				EDE0DDD81FED02FD007975CA /* Sources */,
+				EDE0DDD91FED02FD007975CA /* Frameworks */,
+				EDE0DDDA1FED02FD007975CA /* Resources */,
+				EDE0DDF31FED0353007975CA /* ShellScript */,
+				EDE0DDF81FED0637007975CA /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDE0DDF71FED0636007975CA /* PBXTargetDependency */,
+			);
+			name = Demo;
+			productName = Demo;
+			productReference = EDE0DDDC1FED02FD007975CA /* Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,6 +249,10 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
+					EDE0DDDB1FED02FD007975CA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = EDE0DD771FEB8FEA007975CA /* Build configuration list for PBXProject "GSPagerView" */;
@@ -176,6 +261,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = EDE0DD731FEB8FEA007975CA;
 			productRefGroup = EDE0DD7E1FEB8FEA007975CA /* Products */;
@@ -184,6 +270,7 @@
 			targets = (
 				EDE0DD7C1FEB8FEA007975CA /* GSPagerView */,
 				EDE0DD851FEB8FEB007975CA /* GSPagerViewTests */,
+				EDE0DDDB1FED02FD007975CA /* Demo */,
 			);
 		};
 /* End PBXProject section */
@@ -200,6 +287,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDE0DDDA1FED02FD007975CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDE0DDE91FED02FD007975CA /* LaunchScreen.storyboard in Resources */,
+				EDE0DDE61FED02FD007975CA /* Assets.xcassets in Resources */,
+				EDE0DDE41FED02FD007975CA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +323,25 @@
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
+		EDE0DDF31FED0353007975CA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/GSFoundation.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/GSStability.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/GSUIKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/HandyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/KeychainAccess.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -233,10 +349,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDE0DD9D1FEB9555007975CA /* GSPagerView.swift in Sources */,
-				EDE0DD9F1FEB956B007975CA /* GSPagerViewLayout.swift in Sources */,
-				EDE0DDA11FEB99EF007975CA /* GSPagerViewTransformer.swift in Sources */,
-				EDE0DD991FEB91F3007975CA /* CollectionView.swift in Sources */,
+				EDE0DE041FED0E69007975CA /* GSPagerCollectionView.swift in Sources */,
+				EDE0DDFE1FED0E22007975CA /* GSPagerViewLayoutAttributes.swift in Sources */,
+				EDE0DDFC1FED0DFB007975CA /* GSPagerViewLayout.swift in Sources */,
+				EDE0DDFA1FED0D4B007975CA /* GSPagerView.swift in Sources */,
+				EDE0DE021FED0E4D007975CA /* GSPageViewTransformer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +365,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EDE0DDD81FED02FD007975CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDE0DDE11FED02FD007975CA /* ViewController.swift in Sources */,
+				EDE0DDDF1FED02FD007975CA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -256,7 +382,31 @@
 			target = EDE0DD7C1FEB8FEA007975CA /* GSPagerView */;
 			targetProxy = EDE0DD881FEB8FEB007975CA /* PBXContainerItemProxy */;
 		};
+		EDE0DDF71FED0636007975CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDE0DD7C1FEB8FEA007975CA /* GSPagerView */;
+			targetProxy = EDE0DDF61FED0636007975CA /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EDE0DDE21FED02FD007975CA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDE0DDE31FED02FD007975CA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EDE0DDE71FED02FD007975CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDE0DDE81FED02FD007975CA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		EDE0DD8F1FEB8FEB007975CA /* Debug */ = {
@@ -379,7 +529,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 2LJX58TYK3;
+				DEVELOPMENT_TEAM = MD84C7GYX5;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -404,7 +554,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 2LJX58TYK3;
+				DEVELOPMENT_TEAM = MD84C7GYX5;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -451,6 +601,42 @@
 			};
 			name = Release;
 		};
+		EDE0DDEB1FED02FD007975CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MD84C7GYX5;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/iOS";
+				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Sky-And-Hammer.ios.GS.Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EDE0DDEC1FED02FD007975CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MD84C7GYX5;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/iOS";
+				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Sky-And-Hammer.ios.GS.Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -477,6 +663,15 @@
 			buildConfigurations = (
 				EDE0DD951FEB8FEB007975CA /* Debug */,
 				EDE0DD961FEB8FEB007975CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDE0DDED1FED02FD007975CA /* Build configuration list for PBXNativeTarget "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDE0DDEB1FED02FD007975CA /* Debug */,
+				EDE0DDEC1FED02FD007975CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

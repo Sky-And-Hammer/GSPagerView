@@ -1,198 +1,72 @@
 {
   "warnings": [
     {
-      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPageViewTransformer.swift",
+      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/CollectionView.swift",
       "line": 11,
-      "symbol": "GSPagerViewTransformerType",
-      "symbol_kind": "source.lang.swift.decl.enum",
+      "symbol": "GSCollectionView",
+      "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPageViewTransformer.swift",
-      "line": 12,
-      "symbol": "GSPagerViewTransformerType.crossFading",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPageViewTransformer.swift",
-      "line": 13,
-      "symbol": "GSPagerViewTransformerType.zoomOut",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPageViewTransformer.swift",
-      "line": 14,
-      "symbol": "GSPagerViewTransformerType.depth",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPageViewTransformer.swift",
+      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/CollectionView.swift",
       "line": 15,
-      "symbol": "GSPagerViewTransformerType.overlap",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "symbol": "GSCollectionView.scrollsToTop",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPageViewTransformer.swift",
-      "line": 16,
-      "symbol": "GSPagerViewTransformerType.linear",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPageViewTransformer.swift",
-      "line": 17,
-      "symbol": "GSPagerViewTransformerType.coverFlow",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPageViewTransformer.swift",
-      "line": 18,
-      "symbol": "GSPagerViewTransformerType.ferrisWheel",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPageViewTransformer.swift",
-      "line": 19,
-      "symbol": "GSPagerViewTransformerType.invertedFerrisWheel",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPageViewTransformer.swift",
+      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/CollectionView.swift",
       "line": 20,
-      "symbol": "GSPagerViewTransformerType.cubic",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPageViewTransformer.swift",
-      "line": 23,
-      "symbol": "GSPagerViewTransformer",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPageViewTransformer.swift",
-      "line": 25,
-      "symbol": "GSPagerViewTransformer.pagerView",
+      "symbol": "GSCollectionView.contentInset",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPageViewTransformer.swift",
-      "line": 26,
-      "symbol": "GSPagerViewTransformer.type",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPageViewTransformer.swift",
-      "line": 28,
-      "symbol": "GSPagerViewTransformer.minimumScale",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPageViewTransformer.swift",
-      "line": 29,
-      "symbol": "GSPagerViewTransformer.minimumAlpha",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPageViewTransformer.swift",
-      "line": 31,
-      "symbol": "GSPagerViewTransformer.init(type:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPageViewTransformer.swift",
-      "line": 42,
-      "symbol": "GSPagerViewTransformer.applyTransform(to:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPageViewTransformer.swift",
-      "line": 214,
-      "symbol": "GSPagerViewTransformer.proposedInteritemSpacing()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerCollectionView.swift",
-      "line": 11,
-      "symbol": "GSPagerViewCollectionView",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerCollectionView.swift",
-      "line": 16,
-      "symbol": "GSPagerViewCollectionView.scrollsToTop",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerCollectionView.swift",
-      "line": 22,
-      "symbol": "GSPagerViewCollectionView.contentInset",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerCollectionView.swift",
+      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/CollectionView.swift",
       "line": 30,
-      "symbol": "GSPagerViewCollectionView.init(frame:collectionViewLayout:)",
+      "symbol": "GSCollectionView.init(frame:collectionViewLayout:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerCollectionView.swift",
-      "line": 35,
-      "symbol": "GSPagerViewCollectionView.init(coder:)",
+      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/CollectionView.swift",
+      "line": 34,
+      "symbol": "GSCollectionView.init(coder:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerView.swift",
-      "line": 9,
+      "line": 11,
       "symbol": "GSPagerViewDataSource",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerView.swift",
-      "line": 20,
+      "line": 21,
       "symbol": "GSPagerViewDelegate",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerView.swift",
-      "line": 57,
-      "symbol": "GSPagerViewScrollDirection",
+      "line": 58,
+      "symbol": "GSPagerViewDirection",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerView.swift",
-      "line": 58,
-      "symbol": "GSPagerViewScrollDirection.horizontal",
+      "line": 59,
+      "symbol": "GSPagerViewDirection.horizontal",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerView.swift",
       "line": 59,
-      "symbol": "GSPagerViewScrollDirection.vertical",
+      "symbol": "GSPagerViewDirection.vertical",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
@@ -205,365 +79,484 @@
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerView.swift",
-      "line": 67,
+      "line": 72,
       "symbol": "GSPagerView.dataSource",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerView.swift",
-      "line": 68,
+      "line": 73,
       "symbol": "GSPagerView.delegate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerView.swift",
-      "line": 152,
+      "line": 103,
+      "symbol": "GSPagerView.clipsToBounds",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerView.swift",
+      "line": 191,
       "symbol": "GSPagerView.currentIndex",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerView.swift",
-      "line": 156,
+      "line": 195,
       "symbol": "GSPagerView.collectionViewLayout",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerView.swift",
-      "line": 157,
-      "symbol": "GSPagerView.collectionView",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerView.swift",
-      "line": 158,
+      "line": 197,
       "symbol": "GSPagerView.contentView",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerView.swift",
-      "line": 160,
+      "line": 199,
       "symbol": "GSPagerView.timer",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerView.swift",
-      "line": 161,
+      "line": 200,
       "symbol": "GSPagerView.numberOfItems",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerView.swift",
-      "line": 162,
+      "line": 201,
       "symbol": "GSPagerView.numberOfSections",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerView.swift",
-      "line": 194,
+      "line": 237,
       "symbol": "GSPagerView.init(frame:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerView.swift",
-      "line": 199,
+      "line": 242,
       "symbol": "GSPagerView.init(coder:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerView.swift",
-      "line": 204,
+      "line": 247,
       "symbol": "GSPagerView.layoutSubviews()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerView.swift",
-      "line": 211,
+      "line": 254,
       "symbol": "GSPagerView.willMove(toWindow:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerView.swift",
-      "line": 220,
+      "line": 263,
       "symbol": "GSPagerView.prepareForInterfaceBuilder()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerView.swift",
-      "line": 232,
+      "line": 275,
       "symbol": "GSPagerView.deinit",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerView.swift",
-      "line": 239,
+      "line": 282,
       "symbol": "GSPagerView.numberOfSections(in:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerView.swift",
-      "line": 251,
+      "line": 294,
       "symbol": "GSPagerView.collectionView(_:numberOfItemsInSection:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerView.swift",
-      "line": 255,
+      "line": 298,
       "symbol": "GSPagerView.collectionView(_:cellForItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerView.swift",
-      "line": 264,
+      "line": 307,
       "symbol": "GSPagerView.collectionView(_:shouldHighlightItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerView.swift",
-      "line": 272,
+      "line": 315,
       "symbol": "GSPagerView.collectionView(_:didHighlightItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerView.swift",
-      "line": 280,
+      "line": 323,
       "symbol": "GSPagerView.collectionView(_:shouldSelectItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerView.swift",
-      "line": 288,
+      "line": 331,
       "symbol": "GSPagerView.collectionView(_:didSelectItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerView.swift",
-      "line": 300,
+      "line": 343,
       "symbol": "GSPagerView.collectionView(_:willDisplay:forItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerView.swift",
-      "line": 308,
+      "line": 351,
       "symbol": "GSPagerView.collectionView(_:didEndDisplaying:forItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerView.swift",
-      "line": 316,
+      "line": 359,
       "symbol": "GSPagerView.scrollViewDidScroll(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerView.swift",
-      "line": 330,
+      "line": 373,
       "symbol": "GSPagerView.scrollViewWillBeginDragging(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerView.swift",
-      "line": 339,
+      "line": 382,
       "symbol": "GSPagerView.scrollViewWillEndDragging(_:withVelocity:targetContentOffset:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerView.swift",
-      "line": 350,
+      "line": 393,
       "symbol": "GSPagerView.scrollViewDidEndDecelerating(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerView.swift",
-      "line": 356,
+      "line": 399,
       "symbol": "GSPagerView.scrollViewDidEndScrollingAnimation(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewLayout.swift",
-      "line": 11,
+      "line": null,
       "symbol": "GSPagerViewLayout",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewLayout.swift",
+      "line": 12,
+      "symbol": "GSPagerViewLayoutAttributes",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewLayout.swift",
-      "line": 13,
-      "symbol": "GSPagerViewLayout.contentSize",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewLayout.swift",
       "line": 14,
-      "symbol": "GSPagerViewLayout.leadingSpacing",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewLayout.swift",
-      "line": 15,
-      "symbol": "GSPagerViewLayout.itemSpacing",
+      "symbol": "GSPagerViewLayoutAttributes.position",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewLayout.swift",
       "line": 16,
-      "symbol": "GSPagerViewLayout.needsReprepare",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewLayout.swift",
-      "line": 17,
-      "symbol": "GSPagerViewLayout.direction",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewLayout.swift",
-      "line": 19,
-      "symbol": "GSPagerViewLayout.layoutAttributesClass",
-      "symbol_kind": "source.lang.swift.decl.var.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewLayout.swift",
-      "line": 36,
-      "symbol": "GSPagerViewLayout.init()",
+      "symbol": "GSPagerViewLayoutAttributes.isEqual(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewLayout.swift",
-      "line": 41,
-      "symbol": "GSPagerViewLayout.init(coder:)",
+      "line": 21,
+      "symbol": "GSPagerViewLayoutAttributes.copy(with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewLayout.swift",
-      "line": 46,
-      "symbol": "GSPagerViewLayout.deinit",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "line": 28,
+      "symbol": "GSPagerViewLayout",
+      "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewLayout.swift",
-      "line": 52,
-      "symbol": "GSPagerViewLayout.prepare()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewLayout.swift",
-      "line": 105,
+      "line": 30,
       "symbol": "GSPagerViewLayout.collectionViewContentSize",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewLayout.swift",
-      "line": 109,
+      "line": 32,
+      "symbol": "GSPagerViewLayout.contentSize",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewLayout.swift",
+      "line": 33,
+      "symbol": "GSPagerViewLayout.leadingSpacing",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewLayout.swift",
+      "line": 34,
+      "symbol": "GSPagerViewLayout.itemSpacing",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewLayout.swift",
+      "line": 35,
+      "symbol": "GSPagerViewLayout.needsReprepare",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewLayout.swift",
+      "line": 36,
+      "symbol": "GSPagerViewLayout.direction",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewLayout.swift",
+      "line": 38,
+      "symbol": "GSPagerViewLayout.layoutAttributesClass",
+      "symbol_kind": "source.lang.swift.decl.var.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewLayout.swift",
+      "line": 48,
+      "symbol": "GSPagerViewLayout.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewLayout.swift",
+      "line": 55,
+      "symbol": "GSPagerViewLayout.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewLayout.swift",
+      "line": 62,
+      "symbol": "GSPagerViewLayout.prepare()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewLayout.swift",
+      "line": 98,
       "symbol": "GSPagerViewLayout.shouldInvalidateLayout(forBoundsChange:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewLayout.swift",
-      "line": 113,
+      "line": 100,
       "symbol": "GSPagerViewLayout.layoutAttributesForElements(in:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewLayout.swift",
-      "line": 144,
+      "line": 124,
       "symbol": "GSPagerViewLayout.layoutAttributesForItem(at:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewLayout.swift",
-      "line": 153,
+      "line": 132,
       "symbol": "GSPagerViewLayout.targetContentOffset(forProposedContentOffset:withScrollingVelocity:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewLayout.swift",
-      "line": 194,
+      "line": 171,
       "symbol": "GSPagerViewLayout.forceInvalidate()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewLayout.swift",
-      "line": 199,
-      "symbol": "GSPagerViewLayout.contentOffset(for:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewLayout.swift",
-      "line": 222,
+      "line": 176,
       "symbol": "GSPagerViewLayout.frame(for:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewLayoutAttributes.swift",
-      "line": 9,
-      "symbol": "GSPagerViewLayoutAttributes",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewLayoutAttributes.swift",
-      "line": 11,
-      "symbol": "GSPagerViewLayoutAttributes.position",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewLayoutAttributes.swift",
-      "line": 13,
-      "symbol": "GSPagerViewLayoutAttributes.isEqual(_:)",
+      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewLayout.swift",
+      "line": 185,
+      "symbol": "GSPagerViewLayout.contentOffset(for:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewLayoutAttributes.swift",
-      "line": 20,
-      "symbol": "GSPagerViewLayoutAttributes.copy(with:)",
+      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewTransformer.swift",
+      "line": 21,
+      "symbol": "GSPagerViewTransformerType.crossFading",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewTransformer.swift",
+      "line": 22,
+      "symbol": "GSPagerViewTransformerType.zoomOut",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewTransformer.swift",
+      "line": 23,
+      "symbol": "GSPagerViewTransformerType.depth",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewTransformer.swift",
+      "line": 24,
+      "symbol": "GSPagerViewTransformerType.overlap",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewTransformer.swift",
+      "line": 25,
+      "symbol": "GSPagerViewTransformerType.linear",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewTransformer.swift",
+      "line": 26,
+      "symbol": "GSPagerViewTransformerType.coverFlow",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewTransformer.swift",
+      "line": 27,
+      "symbol": "GSPagerViewTransformerType.ferrisWheel",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewTransformer.swift",
+      "line": 28,
+      "symbol": "GSPagerViewTransformerType.invertedFerrisWheel",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewTransformer.swift",
+      "line": 29,
+      "symbol": "GSPagerViewTransformerType.cubic",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewTransformer.swift",
+      "line": 34,
+      "symbol": "GSPagerViewTransformer",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewTransformer.swift",
+      "line": 36,
+      "symbol": "GSPagerViewTransformer.pagerView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewTransformer.swift",
+      "line": 38,
+      "symbol": "GSPagerViewTransformer.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewTransformer.swift",
+      "line": 39,
+      "symbol": "GSPagerViewTransformer.minScale",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewTransformer.swift",
+      "line": 40,
+      "symbol": "GSPagerViewTransformer.minAlpha",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewTransformer.swift",
+      "line": 42,
+      "symbol": "GSPagerViewTransformer.init(type:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewTransformer.swift",
+      "line": 52,
+      "symbol": "GSPagerViewTransformer.apply(to:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/GloomySunday/Documents/Git/GSPagerView/GSPagerView/GSPagerViewTransformer.swift",
+      "line": 207,
+      "symbol": "GSPagerViewTransformer.proposedInterItemSpacing()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     }

@@ -2,23 +2,22 @@
 //  GSPagerView.swift
 //  GSPagerView
 //
-//  Created by 孟钰丰 on 2017/12/21.
+//  Created by 孟钰丰 on 2017/12/22.
 //  Copyright © 2017年 孟钰丰. All rights reserved.
 //
 
-// MARK: GSPagerViewDataSource
-
-public protocol GSPagerViewDataSource: class {
+@objc public protocol GSPagerViewDataSource: class {
     
     /// Asks your data source object for the number of items in the pager view.
     func numberOfItems(in pagerView: GSPagerView) -> Int
+    
     /// Asks your data source object for the cell that corresponds to the specified item in the pager view.
     func pagerView(_ pagerView: GSPagerView, cellForItemAt index: Int) -> UICollectionViewCell
+    
 }
 
-// MARK: GSPagerViewDataSource
-
-@objc public protocol GSPagerViewDelegate: class {
+@objc
+public protocol GSPagerViewDelegate: NSObjectProtocol {
     
     /// Asks the delegate if the item should be highlighted during tracking.
     @objc optional func pagerView(_ pagerView: GSPagerView, shouldHighlightItemAt index: Int) -> Bool
@@ -52,33 +51,24 @@ public protocol GSPagerViewDataSource: class {
     
     /// Tells the delegate that the pager view has ended decelerating the scrolling movement.
     @objc optional func pagerViewDidEndDecelerating(_ pagerView: GSPagerView)
+    
 }
 
-// MARK: GSPagerViewDirection
-public enum GSPagerViewDirection {
-    case horizontal, vertical
+public enum GSPagerViewScrollDirection {
+    case horizontal
+    case vertical
 }
 
 @IBDesignable
-open class GSPagerView: UIView, UICollectionViewDataSource, UICollectionViewDelegate {
+open class GSPagerView: UIView,UICollectionViewDataSource,UICollectionViewDelegate {
     
     // MARK: - Public properties
     
-    #if TARGET_INTERFACE_BUILDER
-    // Yes you need to lie to the Interface Builder, otherwise "@IBOutlet" cannot be connected.
-    @IBOutlet open weak var dataSource: AnyObject?
-    @IBOutlet open weak var delegate: AnyObject?
-    #else
-    open weak var dataSource: GSPagerViewDataSource?
-    open weak var delegate: GSPagerViewDelegate?
-    #endif
+    @IBOutlet open weak var dataSource: GSPagerViewDataSource?
+    @IBOutlet open weak var delegate: GSPagerViewDelegate?
     
     /// The scroll direction of the pager view. Default is horizontal.
-    open var scrollDirection: GSPagerViewDirection = .horizontal {
-        didSet {
-            self.collectionViewLayout.forceInvalidate()
-        }
-    }
+    open var direction: GSPagerViewScrollDirection = .horizontal { didSet { self.collectionViewLayout.forceInvalidate() } }
     
     /// The time interval of automatic sliding. 0 means disabling automatic sliding. Default is 0.
     @IBInspectable
@@ -93,26 +83,11 @@ open class GSPagerView: UIView, UICollectionViewDataSource, UICollectionViewDele
     
     /// The spacing to use between items in the pager view. Default is 0.
     @IBInspectable
-    open var interitemSpacing: CGFloat = 0 {
-        didSet {
-            self.collectionViewLayout.forceInvalidate()
-        }
-    }
-    
-    @IBInspectable
-    open override var clipsToBounds: Bool {
-        didSet {
-            self.collectionView.clipsToBounds = self.clipsToBounds
-        }
-    }
+    open var interitemSpacing: CGFloat = 0 { didSet { self.collectionViewLayout.forceInvalidate() } }
     
     /// The item size of the pager view. .zero means always fill the bounds of the pager view. Default is .zero.
     @IBInspectable
-    open var itemSize: CGSize = .zero {
-        didSet {
-            self.collectionViewLayout.forceInvalidate()
-        }
-    }
+    open var itemSize: CGSize = .zero { didSet {self.collectionViewLayout.forceInvalidate() } }
     
     /// A Boolean value indicates that whether the pager view has infinite items. Default is false.
     @IBInspectable
@@ -125,19 +100,11 @@ open class GSPagerView: UIView, UICollectionViewDataSource, UICollectionViewDele
     
     /// A Boolean value that determines whether bouncing always occurs when horizontal scrolling reaches the end of the content view.
     @IBInspectable
-    open var alwaysBounceHorizontal: Bool = false {
-        didSet {
-            self.collectionView.alwaysBounceHorizontal = self.alwaysBounceHorizontal;
-        }
-    }
+    open var alwaysBounceHorizontal: Bool = false { didSet { self.collectionView.alwaysBounceHorizontal = self.alwaysBounceHorizontal } }
     
     /// A Boolean value that determines whether bouncing always occurs when vertical scrolling reaches the end of the content view.
     @IBInspectable
-    open var alwaysBounceVertical: Bool = false {
-        didSet {
-            self.collectionView.alwaysBounceVertical = self.alwaysBounceVertical;
-        }
-    }
+    open var alwaysBounceVertical: Bool = false { didSet { self.collectionView.alwaysBounceVertical = self.alwaysBounceVertical } }
     
     /// The background view of the pager view.
     @IBInspectable
@@ -154,6 +121,7 @@ open class GSPagerView: UIView, UICollectionViewDataSource, UICollectionViewDele
     }
     
     /// The transformer of the pager view.
+    @objc
     open var transformer: GSPagerViewTransformer? {
         didSet {
             self.transformer?.pagerView = self
@@ -164,53 +132,43 @@ open class GSPagerView: UIView, UICollectionViewDataSource, UICollectionViewDele
     // MARK: - Public readonly-properties
     
     /// Returns whether the user has touched the content to initiate scrolling.
-    open var isTracking: Bool {
-        return self.collectionView.isTracking
-    }
+    open var isTracking: Bool { return self.collectionView.isTracking }
     
     /// Remove the infinite loop if there is only one item. default is NO
     @IBInspectable
-    open var removesInfiniteLoopForSingleItem: Bool = false {
-        didSet {
-            self.reloadData()
-        }
-    }
+    open var removesInfiniteLoopForSingleItem: Bool = false { didSet { self.reloadData() } }
     
     /// The percentage of x position at which the origin of the content view is offset from the origin of the pagerView view.
     open var scrollOffset: CGFloat {
         let contentOffset = max(self.collectionView.contentOffset.x, self.collectionView.contentOffset.y)
-        let scrollOffset = Double(contentOffset / self.collectionViewLayout.itemSpacing)
+        let scrollOffset = Double(contentOffset/self.collectionViewLayout.itemSpacing)
         return fmod(CGFloat(scrollOffset), CGFloat(Double(self.numberOfItems)))
     }
     
     /// The underlying gesture recognizer for pan gestures.
-    open var panGestureRecognizer: UIPanGestureRecognizer {
-        return self.collectionView.panGestureRecognizer
+    open var panGestureRecognizer: UIPanGestureRecognizer { return self.collectionView.panGestureRecognizer
     }
     
-    @objc open internal(set) var currentIndex: Int = 0
+    @objc open internal(set) dynamic var currentIndex: Int = 0
     
     // MARK: - Private properties
     
     internal weak var collectionViewLayout: GSPagerViewLayout!
-    
+    internal weak var collectionView: GSPagerViewCollectionView!
     internal weak var contentView: UIView!
     
     internal var timer: Timer?
     internal var numberOfItems: Int = 0
     internal var numberOfSections: Int = 0
     
-    fileprivate weak var collectionView: GSCollectionView!
     fileprivate var dequeingSection = 0
     fileprivate var centermostIndexPath: IndexPath {
-        guard self.numberOfItems > 0, self.collectionView.contentSize != .zero else {
-            return IndexPath(item: 0, section: 0)
-        }
+        guard self.numberOfItems > 0, self.collectionView.contentSize != .zero else { return IndexPath(item: 0, section: 0) }
         let sortedIndexPaths = self.collectionView.indexPathsForVisibleItems.sorted { (l, r) -> Bool in
             let leftFrame = self.collectionViewLayout.frame(for: l)
             let rightFrame = self.collectionViewLayout.frame(for: r)
             var leftCenter: CGFloat,rightCenter: CGFloat,ruler: CGFloat
-            switch self.scrollDirection {
+            switch self.direction {
             case .horizontal:
                 leftCenter = leftFrame.midX
                 rightCenter = rightFrame.midX
@@ -223,9 +181,8 @@ open class GSPagerView: UIView, UICollectionViewDataSource, UICollectionViewDele
             return abs(ruler-leftCenter) < abs(ruler-rightCenter)
         }
         let indexPath = sortedIndexPaths.first
-        if let indexPath = indexPath {
-            return indexPath
-        }
+        
+        if let indexPath = indexPath { return indexPath }
         return IndexPath(item: 0, section: 0)
     }
     
@@ -268,7 +225,7 @@ open class GSPagerView: UIView, UICollectionViewDataSource, UICollectionViewDele
         let label = UILabel(frame: self.contentView.bounds)
         label.textAlignment = .center
         label.font = UIFont.boldSystemFont(ofSize: 25)
-        label.text = "PagerView"
+        label.text = "GSPagerView"
         self.contentView.addSubview(label)
     }
     
@@ -345,7 +302,7 @@ open class GSPagerView: UIView, UICollectionViewDataSource, UICollectionViewDele
             return
         }
         let index = indexPath.item % self.numberOfItems
-        function(self, cell, index)
+        function(self,cell,index)
     }
     
     public func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
@@ -353,7 +310,7 @@ open class GSPagerView: UIView, UICollectionViewDataSource, UICollectionViewDele
             return
         }
         let index = indexPath.item % self.numberOfItems
-        function(self, cell, index)
+        function(self,cell,index)
     }
     
     public func scrollViewDidScroll(_ scrollView: UIScrollView) {
@@ -381,7 +338,7 @@ open class GSPagerView: UIView, UICollectionViewDataSource, UICollectionViewDele
     
     public func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         if let function = self.delegate?.pagerViewWillEndDragging(_:targetIndex:) {
-            let contentOffset = self.scrollDirection == .horizontal ? targetContentOffset.pointee.x : targetContentOffset.pointee.y
+            let contentOffset = self.direction == .horizontal ? targetContentOffset.pointee.x : targetContentOffset.pointee.y
             let targetItem = lround(Double(contentOffset/self.collectionViewLayout.itemSpacing))
             function(self, targetItem % self.numberOfItems)
         }
@@ -417,7 +374,7 @@ open class GSPagerView: UIView, UICollectionViewDataSource, UICollectionViewDele
     /// Register a nib file for use in creating new pager view cells.
     ///
     /// - Parameters:
-    ///   - nib: The nib object containing the cell object. The nib file must contain only one top-level object and that object must be of the type PagerViewCell.
+    ///   - nib: The nib object containing the cell object. The nib file must contain only one top-level object and that object must be of the type GSPagerViewCell.
     ///   - identifier: The reuse identifier to associate with the specified nib file. This parameter must not be nil and must not be an empty string.
     @objc(registerNib:forCellWithReuseIdentifier:)
     open func register(_ nib: UINib?, forCellWithReuseIdentifier identifier: String) {
@@ -429,21 +386,11 @@ open class GSPagerView: UIView, UICollectionViewDataSource, UICollectionViewDele
     /// - Parameters:
     ///   - identifier: The reuse identifier for the specified cell. This parameter must not be nil.
     ///   - index: The index specifying the location of the cell.
-    /// - Returns: A valid PagerViewCell object.
+    /// - Returns: A valid GSPagerViewCell object.
     @objc(dequeueReusableCellWithReuseIdentifier:atIndex:)
     open func dequeueReusableCell(withReuseIdentifier identifier: String, at index: Int) -> UICollectionViewCell {
         let indexPath = IndexPath(item: index, section: self.dequeingSection)
         let cell = self.collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath)
-        return cell
-    }
-    
-    /// Return a cell object by giving indexpath
-    ///
-    /// - Parameter indexPath: The indexpath giving
-    /// - Returns: the cell of indexpath, if nil, mean can not found cell for indexpath
-    @objc(cellForItemAtIndexPath:)
-    open func cellForItem(at indexPath: IndexPath) -> UICollectionViewCell? {
-        let cell = collectionView.cellForItem(at: indexPath)
         return cell
     }
     
@@ -462,7 +409,7 @@ open class GSPagerView: UIView, UICollectionViewDataSource, UICollectionViewDele
     @objc(selectItemAtIndex:animated:)
     open func selectItem(at index: Int, animated: Bool) {
         let indexPath = self.nearbyIndexPath(for: index)
-        let scrollPosition: UICollectionViewScrollPosition = self.scrollDirection == .horizontal ? .centeredVertically : .centeredVertically
+        let scrollPosition: UICollectionViewScrollPosition = self.direction == .horizontal ? .centeredVertically : .centeredVertically
         self.collectionView.selectItem(at: indexPath, animated: animated, scrollPosition: scrollPosition)
     }
     
@@ -524,7 +471,7 @@ open class GSPagerView: UIView, UICollectionViewDataSource, UICollectionViewDele
         
         // UICollectionView
         let collectionViewLayout = GSPagerViewLayout()
-        let collectionView = GSCollectionView(frame: CGRect.zero, collectionViewLayout: collectionViewLayout)
+        let collectionView = GSPagerViewCollectionView(frame: CGRect.zero, collectionViewLayout: collectionViewLayout)
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.backgroundColor = UIColor.clear
@@ -576,5 +523,5 @@ open class GSPagerView: UIView, UICollectionViewDataSource, UICollectionViewDele
             return IndexPath(item: index, section: currentSection+1)
         }
     }
+    
 }
-

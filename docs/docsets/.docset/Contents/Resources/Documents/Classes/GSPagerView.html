@@ -14,7 +14,7 @@
     <a title="GSPagerView Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (31% documented)</p>
+        <p><a href="../index.html"> Docs</a> (29% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -31,10 +31,10 @@
             <a href="../Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Classes/GSCollectionView.html">GSCollectionView</a>
+                <a href="../Classes/GSPagerView.html">GSPagerView</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/GSPagerView.html">GSPagerView</a>
+                <a href="../Classes/GSPagerViewCollectionView.html">GSPagerViewCollectionView</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/GSPagerViewLayout.html">GSPagerViewLayout</a>
@@ -51,7 +51,7 @@
             <a href="../Enums.html">Enums</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Enums/GSPagerViewDirection.html">GSPagerViewDirection</a>
+                <a href="../Enums/GSPagerViewScrollDirection.html">GSPagerViewScrollDirection</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/GSPagerViewTransformerType.html">GSPagerViewTransformerType</a>
@@ -91,45 +91,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/c:@M@GSPagerView@objc(cs)GSPagerView(py)dataSource"></a>
                     <a name="//apple_ref/swift/Property/dataSource" class="dashAnchor"></a>
-                    <a class="token" href="#/">dataSource</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/"></a>
-                    <a name="//apple_ref/swift/Property/delegate" class="dashAnchor"></a>
-                    <a class="token" href="#/">delegate</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11GSPagerViewAAC10dataSourceAA0ab4DataD0_pSgXwv"></a>
-                    <a name="//apple_ref/swift/Property/dataSource" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11GSPagerViewAAC10dataSourceAA0ab4DataD0_pSgXwv">dataSource</a>
+                    <a class="token" href="#/c:@M@GSPagerView@objc(cs)GSPagerView(py)dataSource">dataSource</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -146,9 +110,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11GSPagerViewAAC8delegateAA0aB8Delegate_pSgXwv"></a>
+                    <a name="/c:@M@GSPagerView@objc(cs)GSPagerView(py)delegate"></a>
                     <a name="//apple_ref/swift/Property/delegate" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11GSPagerViewAAC8delegateAA0aB8Delegate_pSgXwv">delegate</a>
+                    <a class="token" href="#/c:@M@GSPagerView@objc(cs)GSPagerView(py)delegate">delegate</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -165,9 +129,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11GSPagerViewAAC15scrollDirectionAA0abD0Ov"></a>
-                    <a name="//apple_ref/swift/Property/scrollDirection" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11GSPagerViewAAC15scrollDirectionAA0abD0Ov">scrollDirection</a>
+                    <a name="/s:11GSPagerViewAAC9directionAA0aB15ScrollDirectionOv"></a>
+                    <a name="//apple_ref/swift/Property/direction" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11GSPagerViewAAC9directionAA0aB15ScrollDirectionOv">direction</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -182,7 +146,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">scrollDirection</span><span class="p">:</span> <span class="kt"><a href="../Enums/GSPagerViewDirection.html">GSPagerViewDirection</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">horizontal</span></code></pre>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">direction</span><span class="p">:</span> <span class="kt"><a href="../Enums/GSPagerViewScrollDirection.html">GSPagerViewScrollDirection</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">horizontal</span></code></pre>
 
                         </div>
                       </div>
@@ -239,25 +203,6 @@
                           <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">interitemSpacing</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">0</span></code></pre>
 
                         </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@GSPagerView@objc(cs)GSPagerView(py)clipsToBounds"></a>
-                    <a name="//apple_ref/swift/Property/clipsToBounds" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@GSPagerView@objc(cs)GSPagerView(py)clipsToBounds">clipsToBounds</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
                       </div>
                     </section>
                   </div>
@@ -400,9 +345,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11GSPagerViewAAC11transformerAA0aB11TransformerCSgv"></a>
+                    <a name="/c:@M@GSPagerView@objc(cs)GSPagerView(py)transformer"></a>
                     <a name="//apple_ref/swift/Property/transformer" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11GSPagerViewAAC11transformerAA0aB11TransformerCSgv">transformer</a>
+                    <a class="token" href="#/c:@M@GSPagerView@objc(cs)GSPagerView(py)transformer">transformer</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -579,6 +524,25 @@
                     <a name="/s:11GSPagerViewAAC010collectionB6LayoutSQyAA0abD0CGXwv"></a>
                     <a name="//apple_ref/swift/Property/collectionViewLayout" class="dashAnchor"></a>
                     <a class="token" href="#/s:11GSPagerViewAAC010collectionB6LayoutSQyAA0abD0CGXwv">collectionViewLayout</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11GSPagerViewAAC010collectionB0SQyAA0ab10CollectionB0CGXwv"></a>
+                    <a name="//apple_ref/swift/Property/collectionView" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11GSPagerViewAAC010collectionB0SQyAA0ab10CollectionB0CGXwv">collectionView</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1186,7 +1150,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>The nib object containing the cell object. The nib file must contain only one top-level object and that object must be of the type PagerViewCell.</p>
+                                  <p>The nib object containing the cell object. The nib file must contain only one top-level object and that object must be of the type GSPagerViewCell.</p>
                                 </div>
                               </td>
                             </tr>
@@ -1265,57 +1229,7 @@
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>A valid PagerViewCell object.</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@GSPagerView@objc(cs)GSPagerView(im)cellForItemAtIndexPath:"></a>
-                    <a name="//apple_ref/swift/Method/cellForItem(at:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@GSPagerView@objc(cs)GSPagerView(im)cellForItemAtIndexPath:">cellForItem(at:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Return a cell object by giving indexpath</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">cellForItem</span><span class="p">(</span><span class="n">at</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UICollectionViewCell</span><span class="p">?</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>indexPath</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The indexpath giving</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>the cell of indexpath, if nil, mean can not found cell for indexpath</p>
+                        <p>A valid GSPagerViewCell object.</p>
                       </div>
                     </section>
                   </div>
