@@ -1,0 +1,16 @@
+PODS:
+  - GSPagerView (0.1.0)
+
+DEPENDENCIES:
+  - GSPagerView (from `../`)
+
+EXTERNAL SOURCES:
+  GSPagerView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  GSPagerView: d75adc684554b7c9d9f53c5d05d87c2ffaaefe2e
+
+PODFILE CHECKSUM: 086310681f1b4f58b9993718dcbac88c144fa633
+
+COCOAPODS: 1.3.1

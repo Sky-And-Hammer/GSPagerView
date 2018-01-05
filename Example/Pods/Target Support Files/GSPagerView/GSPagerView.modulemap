@@ -1,0 +1,6 @@
+framework module GSPagerView {
+  umbrella header "GSPagerView-umbrella.h"
+
+  export *
+  module * { export * }
+}
